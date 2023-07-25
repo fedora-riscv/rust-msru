@@ -11,8 +11,10 @@ Summary:        Rust-safe library for interacting with Model Specific Registers 
 
 License:        Apache-2.0
 URL:            https://crates.io/crates/msru
-
 Source:         %{crates_source}
+# Manually created patch for downstream crate metadata changes
+# * fix typo in crate description
+Patch:          msru-fix-metadata.diff
 
 ExclusiveArch:  x86_64
 BuildRequires:  rust-packaging >= 21
