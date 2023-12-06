@@ -6,7 +6,7 @@
 
 Name:           rust-msru
 Version:        0.2.0
-Release:        %autorelease
+Release:        %{autorelease}.rv64
 Summary:        Rust-safe library for interacting with Model Specific Registers in user-space
 
 License:        Apache-2.0
@@ -16,7 +16,7 @@ Source:         %{crates_source}
 # * fix typo in crate description
 Patch:          msru-fix-metadata.diff
 
-ExclusiveArch:  x86_64
+ExclusiveArch:  x86_64 riscv64
 BuildRequires:  rust-packaging >= 21
 
 %global _description %{expand:
