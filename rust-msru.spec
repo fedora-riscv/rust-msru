@@ -16,7 +16,7 @@ Source:         %{crates_source}
 # * fix typo in crate description
 Patch:          msru-fix-metadata.diff
 
-ExclusiveArch:  x86_64
+ExclusiveArch:  x86_64 riscv64
 BuildRequires:  rust-packaging >= 21
 
 %global _description %{expand:
